@@ -2,11 +2,13 @@
 
 Latepoint Timezone Locker (LTL) is an add-on for the Latepoint appointment booking plugin in WordPress. 
 
-IMPORTANT: At this moment, LTL is not an official Latepoint© Add-on. It is not built or endorsed by Latepoint©. Hopefully it will be.
+### IMPORTANT: 
+At this moment, LTL is not an official Latepoint© Add-on. It is not built or endorsed by Latepoint©. 
+Hopefully it will be.
 
-*It was created by me to solve my problem.* 
+  *LTL was created by me to solve my problem.*  
 
-**!!!Knowing this use it at your own risk!!!**
+### **!!! Knowing this use it at your own risk !!!**
 
 Latepoint Timezone Locker ensures that all displayed appointment times strictly follow the timezone set in the WordPress settings, preventing adjustments based on the user’s local timezone.
 
