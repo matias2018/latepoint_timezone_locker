@@ -4,7 +4,7 @@ Latepoint Timezone Locker (LTL) is an add-on for the Latepoint appointment booki
 
 IMPORTANT: At this moment, LTL is not an official Latepoint© Add-on. It is not built or endorsed by Latepoint©. Hopefully it will be.
 
-It was created by me to solve my problem. 
+*It was created by me to solve my problem.* 
 
 **!!!Knowing this use it at your own risk!!!**
 
