@@ -161,7 +161,7 @@ function ltl_enqueue_scripts() {
     $latepoint_script_handle = 'latepoint-main-app-frontend'; // <-- *** VERIFY THIS HANDLE ***
 	wp_enqueue_script(
 		'latepoint-timezone-locker-script',
-		plugin_dir_url( __FILE__ ) . 'js/ltl-script.js',
+		plugin_dir_url( __FILE__ ) . 'js/ltl2script.js',
 		array( 'jquery', $latepoint_script_handle ),
 		'1.2.1', // Version bump
 		true
