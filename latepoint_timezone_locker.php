@@ -96,8 +96,7 @@ function ltl_force_wp_timezone_via_session_filter( $timezone_name ) {
 add_filter( 'latepoint_timezone_name_from_session', 'ltl_force_wp_timezone_via_session_filter', 99 );
 
 
-/**
- * === Updated Cookie Clearing Logic ===
+/** * Clear Latepoint timezone cookie(s) on init.
  *
  * Clear the Latepoint timezone cookie(s) which have dynamic names.
  * Iterates through cookies and clears any matching the known prefix.
@@ -140,9 +139,6 @@ function ltl_clear_timezone_cookie() {
 
                 // Unset from the current request's $_COOKIE array as well (optional but good practice)
                 unset( $_COOKIE[$name] );
-
-                // Optional: If you are certain only ONE such cookie exists, you could 'break;' here.
-                // break;
             }
         }
     }
@@ -158,10 +154,12 @@ function ltl_enqueue_scripts() {
 		return;
 	}
     $wp_timezone_string = ltl_force_wp_timezone_via_session_filter('');
-    $latepoint_script_handle = 'latepoint-main-app-frontend'; // <-- *** VERIFY THIS HANDLE ***
+    $latepoint_script_handle = 'latepoint-main-front'; // <-- *** VERIFIED THIS HANDLE USING QUERY MONITOR ***
+
 	wp_enqueue_script(
 		'latepoint-timezone-locker-script',
 		plugin_dir_url( __FILE__ ) . 'js/ltl2script.js',
+        // Depend on jQuery AND the main Latepoint frontend script handle
 		array( 'jquery', $latepoint_script_handle ),
 		'1.2.1', // Version bump
 		true
