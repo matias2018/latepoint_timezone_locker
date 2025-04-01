@@ -3,7 +3,7 @@
  * Plugin Name:       Latepoint Timezone Locker
  * Plugin URI:        https://pedromatias.dev/ltl
  * Description:       Forces Latepoint booking forms to use the WordPress timezone setting instead of the user's browser timezone.
- * Version:           1.2.0
+ * Version:           1.2.2
  * Author:            Pedro Matias
  * Author URI:        https://pedromatias.dev
  * Contributors:      Pedro Matias
